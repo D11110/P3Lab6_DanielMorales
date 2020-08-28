@@ -13,33 +13,33 @@ private:
 
 public:
     CHAR(){
-        
+
     };
-    CHAR(char a)
+    CHAR(char caracterRecibido)
     {
-        caracter = a;
+        caracter = caracterRecibido;
     };
     char getChar()
     {
         return caracter;
     };
 
-    void operator<<(CHAR a)
+    void operator<<(CHAR caracterRecibido)
     {
-        caracter = a.getChar();
+        caracter = caracterRecibido.getChar();
     }
 
-    void operator<<(char a)
+    void operator<<(char caracterRecibido)
     {
-        caracter = a;
+        caracter = caracterRecibido;
     }
 
-    STRING operator+(CHAR car1)
+    STRING operator+(CHAR caracterRecibido)
     {
         STRING temp;
         string newString;
         newString += caracter;
-        newString += car1.getChar();
+        newString += caracterRecibido.getChar();
         temp << newString;
         return temp;
     }

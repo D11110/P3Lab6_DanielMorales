@@ -15,55 +15,55 @@ public:
     {
         entero = 0;
     };
-    INTEGER(int a)
+    INTEGER(int valorRecibido)
     {
-        entero = a;
+        entero = valorRecibido;
     };
     int getValor()
     {
         return entero;
     }
-    void operator<<(INTEGER valor)
+    void operator<<(INTEGER valorRecibido)
     {
-        entero = valor.getValor();
+        entero = valorRecibido.getValor();
     };
-    void operator<<(int valor)
+    void operator<<(int valorRecibido)
     {
-        entero = valor;
+        entero = valorRecibido;
     };
 
     void operator!()
     {
         std::cout << entero << std::endl;
     };
-    INTEGER operator+(INTEGER suma)
+    INTEGER operator+(INTEGER valorRecibido)
     {
         INTEGER resp;
-        int resultadoSuma = entero + suma.getValor();
+        int resultadoSuma = entero + valorRecibido.getValor();
         resp << resultadoSuma;
         return resp;
     };
 
-    INTEGER operator-(INTEGER resta)
+    INTEGER operator-(INTEGER valorRecibido)
     {
         INTEGER respuesta;
-        int resultadoResta = entero - resta.getValor();
+        int resultadoResta = entero - valorRecibido.getValor();
         respuesta << resultadoResta;
         return respuesta;
     };
 
-    INTEGER operator/(INTEGER div)
+    INTEGER operator/(INTEGER valorRecibido)
     {
         INTEGER respuesta;
-        int resultadoDiv = entero / div.getValor();
+        int resultadoDiv = entero / valorRecibido.getValor();
         respuesta << resultadoDiv;
         return respuesta;
     };
 
-    INTEGER operator*(INTEGER mult)
+    INTEGER operator*(INTEGER valorRecibido)
     {
         INTEGER respuesta;
-        int resultadoMult = entero * mult.getValor();
+        int resultadoMult = entero * valorRecibido.getValor();
         respuesta << resultadoMult;
         return respuesta;
     };

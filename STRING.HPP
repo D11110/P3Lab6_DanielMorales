@@ -27,16 +27,16 @@ public:
     {
         std::cout << cadena << std::endl;
     };
-    STRING operator*(int cant)
+    STRING operator*(int cantidadDeRepeticiones)
     {
-        string temp = "";
-        for (int i = 0; i < cant; i++)
+        string cadenaTemp = "";
+        for (int i = 0; i < cantidadDeRepeticiones; i++)
         {
-            temp += cadena;
+            cadenaTemp += cadena;
         }
-        STRING tempo;
-        tempo << temp;
-        return tempo;
+        STRING objetoStringTemp;
+        objetoStringTemp << cadenaTemp;
+        return objetoStringTemp;
     };
 };
 
